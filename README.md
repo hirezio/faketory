@@ -24,13 +24,13 @@ export const productFaketory = new ProductFaketory();
 
 productFaketory.fakeOne();
 
-productFaketory.fakeMany();
+productFaketory.fakeMany(3);
 
 // Override props or items
 
 productFaketory.fakeOne({id: 'customId'});
 
-productFaketory.fakeMany([
+productFaketory.fakeMany(2, [
   {id: 'customId_1'},
   {id: 'customId_2'}
 ]);
